@@ -1,3 +1,3 @@
 # Basic-calculator-
-This project name is Basic calculator.Here I am trying to make Basic Calculator with HTML ,CSS and JavaScript.
+This project name is Basic calculator.Here I am trying to make Basic Calculator with HTML ,CSS and JavaScript.<br>
 Author-Ayushman Choudhary
