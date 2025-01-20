@@ -12,13 +12,16 @@ Array.from(btn).forEach((button)=>{
         str=eval(userInput.value);
         userInput.value=str;
       }
-      else if(e.target.innerHTML=="X"){
-        e.target.innerHTML="*";
-        str+=e.target.innerHTML;
-        userInput.value=str;
-      }
       else if (e.target.innerHTML=="C"){
         str="";
+        userInput.value=str;
+      }
+      else if(e.target.innerHTML=="M+"){
+        str=M + userInput.value;
+        userInput.value=str;
+      }
+      else if(e.target.innerHTML=="x<sup>2</sup>"){
+        str=userInput.value**2;
         userInput.value=str;
       }
       // else if(str==0){
