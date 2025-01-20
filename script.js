@@ -3,7 +3,7 @@ let btn=document.querySelectorAll(".button");// selecting all buttons with class
 
 let userInput=document.querySelector("input");
 
-// creating array of buttons and also creating a event on the for 
+// creating array of buttons and also creating a event on the button for performing operations 
 Array.from(btn).forEach((button)=>{
   
     button.addEventListener('click',(e)=>{
@@ -16,12 +16,12 @@ Array.from(btn).forEach((button)=>{
         str="";
         userInput.value=str;
       }
-      else if(e.target.innerHTML=="M+"){
-        str=M + userInput.value;
+      else if(e.target.innerHTML=="DEL"){
+        str=str.substring(0,str.length-1)
         userInput.value=str;
       }
-      else if(e.target.innerHTML=="x<sup>2</sup>"){
-        str=userInput.value**2;
+      else if(e.target.innerHTML=="x2"){
+        str=userInput.value*userInput.value;
         userInput.value=str;
       }
       // else if(str==0){
