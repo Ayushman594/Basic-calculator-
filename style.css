@@ -32,7 +32,7 @@ button{
     width:60px;
     font-size:18px;
     height:60px;
-    border:2px solid black;
+    border:2px solid rgb(0, 0, 0);
     border-radius:7px;
 }
 button:hover{
@@ -46,8 +46,3 @@ button:hover{
     width:182px;
 }
 
-/* @media screen {
-    .button-container{
-        width:50vh;
-    }
-} */
