@@ -20,7 +20,7 @@
 }
 .button-container{
     width:350px;
-    margin-top: 45px;
+    margin-top: 34px;
     margin-left:33px;
     display:flex;
     flex-direction: row;
@@ -43,5 +43,5 @@ button:hover{
     color:white;
     background-color:rgb(255, 55, 0);
     font-size:25px;
-    width:182px;
+    width:121px;
 }
