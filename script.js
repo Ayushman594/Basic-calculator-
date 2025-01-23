@@ -11,16 +11,20 @@ Array.from(btn).forEach((button)=>{
   
     button.addEventListener('click',(e)=>{
 
-       //code for evaluating expressions after clicking =
+       //code for evaluating expressions after clicking = and code for error handling
       if(e.target.innerHTML=="="){
+        try{
         str=eval(userInput.value);
         userInput.value=str;
-       
+        }
+        catch(err){
+          userInput.value="Error";
+        }
        }
         
 
       //This is a code for Calculating 1/x where Value of X is the value given as an input 
-          else if (e.target.innerHTML=="1/x"){
+      else if (e.target.innerHTML=="1/x"){
           str=eval(1/userInput.value);
           userInput.value=str;
       }
@@ -49,9 +53,15 @@ Array.from(btn).forEach((button)=>{
 
     // This is a code which deletes the value on the display
       else if(e.target.innerHTML=="DEL"){
-        str=userInput.value;
-        str=str.substring(0,str.length-1)
-        userInput.value=str;
+        if(isNaN(userInput.value)){
+          str="";
+          userInput.value=str;
+        }
+        else{
+         str=userInput.value;
+         str=str.substring(0,str.length-1)
+         userInput.value=str;
+        }
       }
 
       // Above code clears the display screen
@@ -66,13 +76,5 @@ Array.from(btn).forEach((button)=>{
         str+=e.target.innerHTML;
         userInput.value=str;
       }
-
-      // Error handling Code
-      try{
-
-      }
-      catch(err){
-
-      }
-   })
+    })    
 })
