@@ -2,25 +2,33 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: #b8b8b8;
+}
 .main{
     padding:5px;
     width:370px;
-    height:500px;
+    height:580px;
     background-color:rgb(64, 81, 87);
-    border-radius:33px;
-    margin:80px auto 14px auto; 
+    border-radius:28px;
+    margin:80px auto 14px auto;
+    box-shadow: 5px 5px 0px 4px rgb(126, 126, 126); 
 }
 #display{
     padding:16px;
-    width:270px;
-    height:9vh;
+    width:302px;
+    height:13vh;
     font-size:19px;
     border-radius:10px;
     margin:20px 0 0 31px;
 }
+#display:focus{
+    outline-color: rgb(253, 249, 243);
+    outline-width: 3px;
+}
 .button-container{
-    width:350px;
-    margin-top: 34px;
+    width:345px;
+    margin-top: 32px;
     margin-left:33px;
     display:flex;
     flex-direction: row;
@@ -33,7 +41,7 @@ button{
     font-size:18px;
     height:60px;
     border:2px solid rgb(0, 0, 0);
-    border-radius:7px;
+    border-radius:12px;
 }
 button:hover{
     background-color:rgb(190, 186, 186);
@@ -44,4 +52,49 @@ button:hover{
     background-color:rgb(255, 55, 0);
     font-size:25px;
     width:121px;
+}
+@media only screen and (max-width:500px){
+    .main{
+        padding:5px;
+        width:310px;
+        height:580px;
+        background-color:rgb(64, 81, 87);
+        border-radius:33px;
+        margin:80px auto 14px auto; 
+    }
+    #display{
+        padding:16px;
+        width:245px;
+        height:13vh;
+        font-size:19px;
+        border-radius:10px;
+        margin:20px 0 0 31px;
+    }
+    .button-container{
+        width:250px;
+        margin-top: 32px;
+        margin-left:33px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    button{
+        margin-left:1px;
+        margin-bottom:4px;
+        width:47px;
+        font-size:18px;
+        height:60px;
+        border:2px solid rgb(0, 0, 0);
+        border-radius:12px;
+    }
+    button:hover{
+        background-color:rgb(190, 186, 186);
+        color:white;
+    }
+    #equalsto{
+        color:white;
+        background-color:rgb(255, 55, 0);
+        font-size:25px;
+        width:100px;
+    }
 }

@@ -18,7 +18,7 @@ Array.from(btn).forEach((button)=>{
         userInput.value=str;
         }
         catch(err){
-          userInput.value="Error";
+          userInput.value=`${err}`;
         }
        }
         
@@ -53,15 +53,9 @@ Array.from(btn).forEach((button)=>{
 
     // This is a code which deletes the value on the display
       else if(e.target.innerHTML=="DEL"){
-        if(isNaN(userInput.value)){
-          str="";
-          userInput.value=str;
-        }
-        else{
          str=userInput.value;
          str=str.substring(0,str.length-1)
          userInput.value=str;
-        }
       }
 
       // Above code clears the display screen
