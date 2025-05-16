@@ -18,7 +18,7 @@ Array.from(btn).forEach((button)=>{
         userInput.value=str;
         }
         catch(err){
-          userInput.value=`${err}`;
+          userInput.value=`error`;
         }
        }
         
